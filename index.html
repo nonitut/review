@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Unaxiety — креативное агентство, которое помогает творческим людям заявить о себе миру: дизайн, брендинг, сайты, стратегии." />
+    <meta name="keywords" content="Unaxiety, креативное агентство, брендинг, сайты, визуал, дизайн, идентика, маркетинг" />
+    <meta name="author" content="Unaxiety Agency" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:title" content="Unaxiety — свобода творить, Миру себя громко явить" />
+    <meta property="og:description" content="Креативное агентство, которое помогает тебе заявить о себе через сильный визуал, брендинг и веб." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://unaxiety.com" />
+    <meta property="og:image" content="https://unaxiety.com/og-image.jpg" />
+    <meta property="og:site_name" content="Unaxiety" />
+    <!-- Защита -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+    <meta name="google-site-verification" content="your-google-site-verification-code" />
+    <meta name="yandex-verification" content="your-yandex-verification-code" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Unaxiety Agency" />
+    <title>Unaxiety Agency</title>
+
+    <link rel="icon" href="./images/favicon.png">
+    <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      img-src 'self' https://unaxiety.com;
+      script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+      style-src 'self' 'unsafe-inline';
+      font-src 'self' data:;
+      connect-src 'self';
+    ">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrambleTextPlugin.min.js" defer></script>
+
+    <script src="./javascripts/cookie.js" defer></script>
+    <script src="./javascripts/opencard.js" defer charset="utf-8"></script>
+    <!-- <script src="./javascripts/otzivy.js" defer charset="utf-8"></script> -->
+    <script src="./javascripts/cursor.js" defer></script>
+    <script src="./javascripts/header.js" defer></script>
+    <script src="./javascripts/words.js" defer></script>
+    <script src="./javascripts/java-script.js" defer charset="utf-8"></script>
+
+
+  </head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
+<!-- <audio id="ambientAudio" src="./Unaxiety.mp3" preload="auto"></audio> -->
+
+<div class="cookie-popup" id="cookiePopup">
+  <h2>Ой, а у нас тут cookies! 🍪</h2><br>
+  <p>Не те, что к чаю, а те, что делают сайт умнее и удобнее<br>
+  Вы можете принять их или отказаться</p>
+
+  <!-- Чекбокс согласия с политикой -->
+  <div class="cookie-policy-checkbox">
+    <input type="checkbox" id="policyAgree">
+    <label for="policyAgree">Я ознакомлен(а) с политикой конфиденциальности</label>
+  </div>
+
+  <div class="cookie-buttons">
+    <button id="acceptCookies" class="cookie-accept">Принять</button>
+    <button id="declineCookies" class="cookie-decline">Пока нет</button>
+  </div>
+
+  <p class="cookie-policy">
+    <small>Продолжая использовать сайт, вы соглашаетесь с нашей <br>
+    <a href="./PolicyDoc.html" target="_blank">Политикой конфиденциальности</a></small>
+  </p>
+</div>
+
+    <div class="utm">
+        <input type="hidden" name="utm_source" id="utm_source">
+        <input type="hidden" name="utm_medium" id="utm_medium">
+        <input type="hidden" name="utm_campaign" id="utm_campaign">
+        <input type="hidden" name="utm_content" id="utm_content">
+        <input type="hidden" name="utm_term" id="utm_term">
+    </div>
+
+    <header class="sticky-header">
+      <nav>
+        <ul>
+          <li><a href="#hero">unaxiety.com</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#contact">Контакты</a></li>
+          <!-- <li><button id="musicToggle">🎧 Music</button></li> -->
+          <li><a target="_blank" href="https://t.me/incognitolol"><button class="contact-button">Contact Us <img src="" alt=""></button></a></li>
+          <li><a href="./enindex.html"><div class="lang-switcher"><button class="languagebutton">EN</button></div></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1 id="hero-title">Unaxiety</h1>
+        <p>Digital Agency, где детали важны для работы без тревог в каждом касании</p>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2 class="touch">Ваш цифровой проект — наша специализация</h2>
+      <div class="cards-grid">
+        <div class="cards">
+          <h3>Бизнес-результаты</h3>
+          <p>Помогаем малым компаниям увеличивать конверсию и продажи через эффективные цифровые решения</p>
+        </div>
+        <div class="cards">
+          <h3>Команда специалистов</h3>
+          <p>Фокус на решениях для бизнеса: аудит сайтов, UI/UX-дизайн, адаптивная верстка и комплексное продвижение</p>
+        </div>
+        <div class="cards">
+          <h3>Почему выбирают нас</h3>
+          <p>Работаем быстро и без раздутой бюрократии. Фиксированные сроки, прозрачная отчетность и ориентация на ваш ROI</p>
+        </div>
+      </div>
+    </section>
+
+  <section id="services" class="services-container">
+    <div class="header">
+      <h1 class="touch">Наши услуги</h1>
+      <p>Комплексные маркетинговые решения для роста вашего бизнеса</p>
+    </div>
+    <div class="services-list">
+      <div class="service-item">
+        <div class="service-header">
+          <div class="service-title">Аудит сайта</div>
+          <div class="service-icon">+</div>
+        </div>
+        <div class="service-description">
+          Подробный разбор сильных и слабых сторон вашего сайта: от дизайна и юзабилити до SEO и скорости загрузки. 
+          Получите чёткий план улучшений для роста эффективности <br>
+          Цена от 10 000 ₽
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-header">
+          <div class="service-title">Разработка стратегии</div>
+          <div class="service-icon">+</div>
+        </div>
+        <div class="service-description">
+          Комплексный анализ рынка и создание персональной стратегии <br>
+          Цена от 20 000 ₽
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-header">
+          <div class="service-title">SMM продвижение</div>
+          <div class="service-icon">+</div>
+        </div>
+        <div class="service-description">
+          Ведение соцсетей: контент, визуал, аналитика. <br>
+          Цена от 15 000 ₽/мес
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-header">
+          <div class="service-title">Контекстная реклама</div>
+          <div class="service-icon">+</div>
+        </div>
+        <div class="service-description">
+          Настройка рекламных кампаний в Google Ads и Яндекс.Директ. <br>
+          Цена от 10 000 ₽ + рекламный бюджет
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-header">
+          <div class="service-title">SEO-оптимизация</div>
+          <div class="service-icon">+</div>
+        </div>
+        <div class="service-description">
+          Улучшение видимости сайта в поиске. <br>
+          Цена от 15 000 ₽/мес
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-header">
+          <div class="service-title">Брендинг</div>
+          <div class="service-icon">+</div>
+        </div>
+        <div class="service-description">
+          Создание логотипа, айдентики и визуала бренда. <br>
+          Цена от 30 000 ₽
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="portfolio" class="cases">
+<div class="cascading-image">
+  <img src="./images/99.jpeg" class="cascading-image__image"  style="left: 0vw;"/>
+  <img src="./images/img668.jpeg" class="cascading-image__image"  style="left: 10vw; top: 5vw"/>
+  <img src="./images/77.jpeg" class="cascading-image__image" style="left: 15vw; top: 10vw"/>
+  <img src="./images/000.jpeg" class="cascading-image__image"  style="left: 20vw; top: 15vw"/>
+  <img src="" class="cascading-image__image" style="left: 25vw; top: 20vw"/>
+</div>
+</section>
+
+    <!-- <section class="reviews">
+      <h2>Отзывы</h2>
+      <div class="reviews-list" id="reviewsList">
+        Отзывы будут здесь
+      </div>
+      
+      <form id="reviewForm">
+        <h3>Оставить отзыв</h3>
+        <input type="text" id="nameInput" placeholder="Ваше имя" required>
+        <textarea id="reviewInput" placeholder="Ваш отзыв" required></textarea>
+        <button type="submit" id="submitBtn">Отправить</button>
+        <button type="button" id="cancelEdit" style="display: none;">Отменить</button>
+      </form>
+    </section> -->
+
+<footer id="contact">
+  <a href="#about"><p class="floating-text">Unaxiety.com</p></a>
+  <div class="footer-container">
+    <div class="footer-left">
+
+      <!-- Юридические ссылки -->
+      <div class="legal-links">
+        <a href="./PolicyDoc.html" title="Политика конфиденциальности Unaxiety Agency">Конфиденциальность</a>
+        <a href="./termsPolicy.html" title="Пользовательское соглашение Unaxiety Agency">Условия</a>
+        <a href="./offer.html" title="Оферта Unaxiety Agency">Оферта</a>
+        <a href="./cookie.html" title="Политика использования Cookie">Cookie</a>
+      </div>
+
+      <!-- Теги / ключевые слова -->
+      <div class="tags">
+        <span>#маркетинг</span>
+        <span>#аудит</span>
+        <span>#SEO</span>
+        <span>#SMM</span>
+        <span>#таргет</span>
+        <span>#аналитика</span>
+      </div>
+
+      <!-- Реквизиты и контакты -->
+      <div class="agency-info">
+        <p>© 2025 Unaxiety Agency</p>
+        <p>Самозанятая: Аракелян Нона Аркадьевна</p>
+        <p>ИНН: 123456789012</p>
+        <p>Email: <a href="mailto:contact@unaxiety.com">contact@unaxiety.com</a></p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

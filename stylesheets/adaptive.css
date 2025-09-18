@@ -1,0 +1,137 @@
+:root {
+--primary-color: #000;
+--text-light: #ecf0f1;
+--text-dark: #2c3e50;
+--accent-color: #4B5F40;
+--accent-color-hover: #3a4b32;
+--neutral-light: #f9f9f9;
+--neutral-grey: #606060;
+--neutral-text: #aeaeae;
+--hover-text: #c8c8c8;
+--hover-icon: #e0e0e0;
+}
+@media screen and (min-width: 1px) and (max-width: 450px)  {
+.sticky-header nav ul li { display: none;}
+nav ul li {
+    width: 15vw;
+    text-align: center;
+    font-size: 3vw;
+}
+.cursor, .cursor-dot{
+    display: none;
+}
+
+.contact-button{
+    width: 20vw;
+    padding: 1vw 2vw;
+    background: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 4px;
+    font-size: 3vw;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.languagebutton {
+    width: 10vw;
+    padding: 1vw 2vw;
+    background: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 4px;
+    font-size: 3vw;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Показываем только логотип/главную ссылку и кнопки */
+.sticky-header nav ul li:first-child,
+.sticky-header nav ul li:last-child,
+.sticky-header nav ul li:nth-last-child(2) {
+display: inline-block;
+}
+
+/* Если нужно выстроить их в линию */
+.sticky-header nav ul {
+width: 100vw;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1%;
+}
+
+.cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    width: 100%;
+}
+.section h2, .header h1{
+    font-size: 5vw;
+    text-align: left;
+    color: var(--neutral-grey);
+}
+.header h1{
+margin: 5vw auto;
+width: 90vw;
+}
+
+.header p{
+font-size: 3vw;
+text-align: left;
+margin: 0vw auto;
+width: 90vw;
+opacity: 0.9; 
+}
+
+.cards{
+    width: 95%;
+    height: 20vw;
+}
+.cards h3 {
+    font-size: 5vw;
+}
+.service-title {
+    font-size: 3vw;
+    font-weight: 600;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+.service-item.active .service-title{
+    font-size: 3vw;
+}
+.service-description{
+    font-size: 2.5vw;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.cards p{
+    margin-top: 5%;
+    font-size: 3vw;
+    line-height: 100%;
+}
+.cookie-popup{
+    display: none;
+}
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+
+}
+
+
+@media screen and (min-width:  769px) and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+
+}
+
+
+@media screen and (min-width: 1921px) {
+
+} 

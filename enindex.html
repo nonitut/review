@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Unaxiety — a creative agency that helps creative people present themselves to the world: design, branding, websites, strategies." />
+<meta name="keywords" content="Unaxiety, creative agency, branding, websites, visual, design, identity, marketing" />
+<meta name="author" content="Unaxiety Agency" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#000000" />
+<meta property="og:title" content="Unaxiety — freedom to create, show yourself loudly to the world" />
+<meta property="og:description" content="A creative agency that helps you present yourself through strong visuals, branding, and web." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://unaxiety.com" />
+<meta property="og:image" content="https://unaxiety.com/og-image.jpg" />
+<meta property="og:site_name" content="Unaxiety" />
+<!-- Security -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+<meta name="google-site-verification" content="your-google-site-verification-code" />
+<meta name="yandex-verification" content="your-yandex-verification-code" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Unaxiety Agency" />
+<title>Unaxiety Agency</title>
+
+<link rel="icon" href="./images/favicon.png">
+<link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+<meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    img-src 'self' https://unaxiety.com;
+    script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+    style-src 'self' 'unsafe-inline';
+    font-src 'self' data:;
+    connect-src 'self';
+">
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrambleTextPlugin.min.js" defer></script>
+
+<script src="./javascripts/cookie.js" defer></script>
+<script src="./javascripts/opencard.js" defer charset="utf-8"></script>
+<!-- <script src="./javascripts/otzivy.js" defer charset="utf-8"></script> -->
+<script src="./javascripts/cursor.js" defer></script>
+<script src="./javascripts/header.js" defer></script>
+<script src="./javascripts/words.js" defer></script>
+<script src="./javascripts/java-script.js" defer charset="utf-8"></script>
+
+
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
+<!-- <audio id="ambientAudio" src="./Unaxiety.mp3" preload="auto"></audio> -->
+
+<div class="cookie-popup" id="cookiePopup">
+<h2>Oops, we have cookies here! 🍪</h2><br>
+<p>Not the ones for tea, but the ones that make the site smarter and more convenient<br>
+You can accept or decline them</p>
+
+<!-- Consent checkbox -->
+<div class="cookie-policy-checkbox">
+<input type="checkbox" id="policyAgree">
+<label for="policyAgree">I have read the privacy policy</label>
+</div>
+
+<div class="cookie-buttons">
+<button id="acceptCookies" class="cookie-accept">Accept</button>
+<button id="declineCookies" class="cookie-decline">Not now</button>
+</div>
+
+<p class="cookie-policy">
+<small>By continuing to use the site, you agree to our <br>
+<a href="./PolicyDoc.html" target="_blank">Privacy Policy</a></small>
+</p>
+</div>
+
+<div class="utm">
+    <input type="hidden" name="utm_source" id="utm_source">
+    <input type="hidden" name="utm_medium" id="utm_medium">
+    <input type="hidden" name="utm_campaign" id="utm_campaign">
+    <input type="hidden" name="utm_content" id="utm_content">
+    <input type="hidden" name="utm_term" id="utm_term">
+</div>
+
+<header class="sticky-header">
+    <nav>
+    <ul>
+        <li><a href="#hero">unaxiety.com</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contacts</a></li>
+        <!-- <li><button id="musicToggle">🎧 Music</button></li> -->
+        <li><a target="_blank" href="https://t.me/incognitolol"><button class="contact-button">Contact Us <img src="" alt=""></button></a></li>
+        <li><a href="./index.html"><div class="lang-switcher"><button class="languagebutton">RU</button></div></a></li>
+    </ul>
+    </nav>
+</header>
+
+<section id="hero" class="hero">
+    <div class="hero-content">
+    <h1 id="hero-title">Unaxiety</h1>
+    <p>Digital Agency, where details matter for worry-free work in every touchpoint</p>
+    </div>
+</section>
+
+<section id="about" class="section about">
+    <h2 class="touch">Your digital project — our specialization</h2>
+    <div class="cards-grid">
+    <div class="cards">
+        <h3>Business Results</h3>
+        <p>We help small companies increase conversions and sales through effective digital solutions</p>
+    </div>
+    <div class="cards">
+        <h3>Team of Experts</h3>
+        <p>Focus on business solutions: website audits, UI/UX design, responsive coding, and comprehensive promotion</p>
+    </div>
+    <div class="cards">
+        <h3>Why Choose Us</h3>
+        <p>We work fast without bloated bureaucracy. Fixed deadlines, transparent reporting, and focus on your ROI</p>
+    </div>
+    </div>
+</section>
+
+<section id="services" class="services-container">
+<div class="header">
+    <h1 class="touch">Our Services</h1>
+    <p>Comprehensive marketing solutions for your business growth</p>
+</div>
+<div class="services-list">
+    <div class="service-item">
+    <div class="service-header">
+        <div class="service-title">Website Audit</div>
+        <div class="service-icon">+</div>
+    </div>
+    <div class="service-description">
+        A detailed breakdown of your website’s strengths and weaknesses: from design and usability to SEO and load speed. 
+        Get a clear improvement plan to boost efficiency <br>
+        Price from 10,000 ₽
+    </div>
+    </div>
+    <div class="service-item">
+    <div class="service-header">
+        <div class="service-title">Strategy Development</div>
+        <div class="service-icon">+</div>
+    </div>
+    <div class="service-description">
+        Comprehensive market analysis and creation of a personalized strategy <br>
+        Price from 20,000 ₽
+    </div>
+    </div>
+    <div class="service-item">
+    <div class="service-header">
+        <div class="service-title">SMM Promotion</div>
+        <div class="service-icon">+</div>
+    </div>
+    <div class="service-description">
+        Social media management: content, visuals, analytics. <br>
+        Price from 15,000 ₽/month
+    </div>
+    </div>
+    <div class="service-item">
+    <div class="service-header">
+        <div class="service-title">Contextual Advertising</div>
+        <div class="service-icon">+</div>
+    </div>
+    <div class="service-description">
+        Setting up ad campaigns in Google Ads and Yandex.Direct. <br>
+        Price from 10,000 ₽ + ad budget
+    </div>
+    </div>
+    <div class="service-item">
+    <div class="service-header">
+        <div class="service-title">SEO Optimization</div>
+        <div class="service-icon">+</div>
+    </div>
+    <div class="service-description">
+        Improving website visibility in search engines. <br>
+        Price from 15,000 ₽/month
+    </div>
+    </div>
+    <div class="service-item">
+    <div class="service-header">
+        <div class="service-title">Branding</div>
+        <div class="service-icon">+</div>
+    </div>
+    <div class="service-description">
+        Creating logos, identity, and brand visuals. <br>
+        Price from 30,000 ₽
+    </div>
+    </div>
+</div>
+</section>
+
+<section id="portfolio" class="cases">
+<div class="cascading-image">
+<img src="./images/99.jpeg" class="cascading-image__image"  style="left: 0vw;"/>
+<img src="./images/img668.jpeg" class="cascading-image__image"  style="left: 10vw; top: 5vw"/>
+<img src="./images/77.jpeg" class="cascading-image__image" style="left: 15vw; top: 10vw"/>
+<img src="./images/000.jpeg" class="cascading-image__image"  style="left: 20vw; top: 15vw"/>
+<img src="" class="cascading-image__image" style="left: 25vw; top: 20vw"/>
+</div>
+</section>
+
+<!-- <section class="reviews">
+    <h2>Reviews</h2>
+    <div class="reviews-list" id="reviewsList">
+    Reviews will be here
+    </div>
+    
+    <form id="reviewForm">
+    <h3>Leave a review</h3>
+    <input type="text" id="nameInput" placeholder="Your name" required>
+    <textarea id="reviewInput" placeholder="Your review" required></textarea>
+    <button type="submit" id="submitBtn">Send</button>
+    <button type="button" id="cancelEdit" style="display: none;">Cancel</button>
+    </form>
+</section> -->
+
+<footer id="contact">
+<a href="#about"><p class="floating-text">Unaxiety.com</p></a>
+<div class="footer-container">
+<div class="footer-left">
+
+    <!-- Legal links -->
+    <div class="legal-links">
+    <a href="./PolicyDoc.html" title="Unaxiety Agency Privacy Policy">Privacy</a>
+    <a href="./termsPolicy.html" title="Unaxiety Agency User Agreement">Terms</a>
+    <a href="./offer.html" title="Unaxiety Agency Offer">Offer</a>
+    <a href="./cookie.html" title="Cookie Policy">Cookie</a>
+    </div>
+
+    <!-- Tags / keywords -->
+    <div class="tags">
+    <span>#marketing</span>
+    <span>#audit</span>
+    <span>#SEO</span>
+    <span>#SMM</span>
+    <span>#targeting</span>
+    <span>#analytics</span>
+    </div>
+
+    <!-- Company info and contacts -->
+    <div class="agency-info">
+    <p>© 2025 Unaxiety Agency</p>
+    <p>Self-employed: Arakelyan Nona Arkadyevna</p>
+    <p>INN: 123456789012</p>
+    <p>Email: <a href="mailto:contact@unaxiety.com">contact@unaxiety.com</a></p>
+    </div>
+
+</div>
+</div>
+</footer>
+
+</body>
+</html>
